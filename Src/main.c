@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,7 +35,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define VOITURE_CONNECTEE   GPIO_PIN_RESET
+#define VOITURE_DECONNECTEE GPIO_PIN_SET
+#define VOITURE_EN_CHARGE   GPIO_PIN_RESET
+#define VOITURE_HORS_CHARGE GPIO_PIN_SET
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,7 +54,12 @@ UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
-
+char texte_ecrit[1000];
+char texte_lut[1000];
+char etatVoiture[1000];
+int loops;
+GPIO_PinState voitureConnectee;
+GPIO_PinState voitureEnCharge;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -89,6 +98,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  loops = 0;
 
   /* USER CODE END Init */
 
@@ -116,7 +126,57 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	HAL_Delay(500);
+	// Lecture des entrées gpio , (variable = fonction(localisation port, localisation pin);)
+	voitureConnectee = HAL_GPIO_ReadPin(SW_E0_CN10_33_GPIO_Port, SW_E0_CN10_33_Pin);
+	voitureEnCharge = HAL_GPIO_ReadPin(SW_B0_EN10_31_GPIO_Port, SW_B0_EN10_31_Pin);
+	// Clignotement de la led
+	HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	// Ecriture du message sur usart3, %d comme valeur d'une variable entière
+	sprintf(texte_ecrit, "Message %5d sur UART3, switchs %d%d\n", loops++, voitureConnectee, voitureEnCharge);
+	// affichage du message
+	HAL_UART_Transmit(&huart3, (uint8_t *)texte_ecrit, strlen(texte_ecrit), 100);
+	switch(voitureConnectee)
+	{
+		case VOITURE_CONNECTEE:
+		{
+			switch(voitureEnCharge)
+			{
+				case VOITURE_EN_CHARGE:
+				{
+					sprintf(etatVoiture, "Voiture en charge");
+					break;
+				}
+				default :
+				{
+					sprintf(etatVoiture, "Voiture detectée hors charge");
+					break;
+				}
+			}
+			break;
+		}
+		default :
+		{
+			switch(voitureEnCharge)
+			{
+				case VOITURE_EN_CHARGE:
+				{
+					sprintf(etatVoiture, "Voiture en charge ? Ce n'est pas possible !");
+					break;
+				}
+				default :
+				{
+					sprintf(etatVoiture, "Voiture non detectée, donc hors charge");
+					break;
+				}
+			}
+			break;
+		}
+	}
+	// Ecriture de message sur usart2
+	sprintf(texte_ecrit, "Message %5d sur UART2: %s\n", loops++, etatVoiture);
+	// affichage du message
+	HAL_UART_Transmit(&huart2, (uint8_t *)texte_ecrit, strlen(texte_ecrit), 100);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
