@@ -49,7 +49,7 @@ ip4_addr_t gw;
 
 /* USER CODE END 2 */
 
-/**
+/**à
   * LwIP initialization function
   */
 void MX_LWIP_Init(void)
