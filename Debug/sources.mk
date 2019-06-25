@@ -18,6 +18,7 @@ C_DEPS :=
 SUBDIRS := \
 Drivers/STM32F4xx_HAL_Driver/Src \
 Middlewares/Third_Party/LwIP/src/api \
+Middlewares/Third_Party/LwIP/src/apps/httpd \
 Middlewares/Third_Party/LwIP/src/apps/mqtt \
 Middlewares/Third_Party/LwIP/src/core \
 Middlewares/Third_Party/LwIP/src/core/ipv4 \
