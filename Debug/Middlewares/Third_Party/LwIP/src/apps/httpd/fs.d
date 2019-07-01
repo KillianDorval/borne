@@ -1,6 +1,6 @@
-Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.o: \
- ../Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.c \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_opts.h \
+Middlewares/Third_Party/LwIP/src/apps/httpd/fs.o: \
+ ../Middlewares/Third_Party/LwIP/src/apps/httpd/fs.c \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h \
  C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../Inc/lwipopts.h ../Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -37,9 +37,16 @@ Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.o: \
  C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
  C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
  C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cc.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cpu.h
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cpu.h \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/def.h \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/fs.h \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/err.h \
+ ../Middlewares/Third_Party/LwIP/src/apps/httpd/fsdata.h ../Inc/fsdata.c \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/fs.h \
+ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/apps/httpd/fsdata.h
 
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_opts.h:
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h:
 
 C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 
@@ -116,3 +123,19 @@ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Pa
 C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cc.h:
 
 C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cpu.h:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/def.h:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/fs.h:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/err.h:
+
+../Middlewares/Third_Party/LwIP/src/apps/httpd/fsdata.h:
+
+../Inc/fsdata.c:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/apps/fs.h:
+
+C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/apps/httpd/fsdata.h:

@@ -1,5 +1,4 @@
 Src/syscalls.o: ../Src/syscalls.c \
- ../Middlewares/Third_Party/LwIP/src/include/posix/errno.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h ../Inc/lwipopts.h \
  ../Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -37,8 +36,6 @@ Src/syscalls.o: ../Src/syscalls.c \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
  ../Middlewares/Third_Party/LwIP/system/arch/cc.h \
  ../Middlewares/Third_Party/LwIP/system/arch/cpu.h
-
-../Middlewares/Third_Party/LwIP/src/include/posix/errno.h:
 
 ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h:
 

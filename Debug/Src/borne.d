@@ -1,8 +1,4 @@
-Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.o: \
- ../Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.c \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_opts.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
- ../Inc/lwipopts.h ../Inc/main.h \
+Src/borne.o: ../Src/borne.c ../Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -33,17 +29,7 @@ Middlewares/Third_Party/LwIP/src/netif/ppp/pppos.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cc.h \
- C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cpu.h
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_opts.h:
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
-
-../Inc/lwipopts.h:
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 
 ../Inc/main.h:
 
@@ -108,11 +94,3 @@ C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Pa
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/debug.h:
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/src/include/lwip/arch.h:
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cc.h:
-
-C:/Users/killi/STM32CubeIDE/workspace_1.0.1/borneSimulation/Middlewares/Third_Party/LwIP/system/arch/cpu.h:

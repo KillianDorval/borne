@@ -62,7 +62,9 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
- ../Inc/ethernetif.h
+ ../Inc/ethernetif.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h
 
 ../Inc/main.h:
 
@@ -199,3 +201,7 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
 ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h:
 
 ../Inc/ethernetif.h:
+
+../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd.h:
+
+../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h:

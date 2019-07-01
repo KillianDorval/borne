@@ -61,7 +61,7 @@
 
 /** Set this to 1 to support SSI (Server-Side-Includes) */
 #if !defined LWIP_HTTPD_SSI || defined __DOXYGEN__
-#define LWIP_HTTPD_SSI            0
+#define LWIP_HTTPD_SSI            1
 #endif
 
 /** Set this to 1 to implement an SSI tag handler callback that gets a const char*

@@ -99,7 +99,6 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-//  loops = 0;
 
   /* USER CODE END Init */
 
